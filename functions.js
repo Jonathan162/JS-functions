@@ -1,9 +1,8 @@
-//A little guessing game
+//A little guessing game with if else
 
 function guessingGame() {
   let randomNumber = Math.floor(Math.random() * 11);
   let guess;
-
   console.log(randomNumber);
 
   do {
@@ -18,4 +17,55 @@ function guessingGame() {
     }
   } while (guess != randomNumber);
   alert("you won");
+}
+
+//Country facts with switch statements
+
+function countryFacts() {
+  let greeting = "Hi! Enter a country and you'll get some facts in return.";
+  alert(greeting);
+
+  while (window.prompt != null) {
+    let countryInput = prompt("Please enter a country").toLowerCase();
+
+    switch (countryInput) {
+      case "usa":
+        alert(
+          "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius, tempora."
+        );
+        break;
+      case "sweden":
+        alert(
+          "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius, tempora."
+        );
+        break;
+      case "spain":
+        alert(
+          "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius, tempora."
+        );
+        break;
+      case "finland":
+        alert(
+          "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius, tempora."
+        );
+        break;
+      case "portugal":
+        alert(
+          "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius, tempora."
+        );
+        break;
+      case "germany":
+        alert(
+          "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius, tempora."
+        );
+        break;
+      case "japan":
+        alert(
+          "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius, tempora."
+        );
+        break;
+      default:
+        alert("Unkown country for me, try again!");
+    }
+  }
 }
