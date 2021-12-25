@@ -9,15 +9,15 @@ function guessingGame() {
     guess = prompt("Guess a number between 1-10!");
     console.log(guess);
     if (guess <= 0 || guess > 10 || isNaN(guess)) {
-      alert("Please only enter a numeric value >0 & <10!");
+      alert("Please only enter a numeric value >0 & <10");
     } else if (randomNumber > guess) {
-      alert("too low");
+      alert("Too low");
     } else if (randomNumber < guess) {
-      alert("to high");
+      alert("Too high");
     }
   } while (guess != randomNumber);
   // add a way to exit on window.prompt.
-  alert("you won");
+  alert("You won!");
 }
 
 //Country facts with switch statement
