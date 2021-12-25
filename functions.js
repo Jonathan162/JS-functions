@@ -16,6 +16,7 @@ function guessingGame() {
       alert("to high");
     }
   } while (guess != randomNumber);
+  // add a way to exit on window.prompt.
   alert("you won");
 }
 
