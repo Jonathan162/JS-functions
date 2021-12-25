@@ -1,4 +1,4 @@
-//A little guessing game with if else
+//A little guessing game with if / else if
 
 function guessingGame() {
   let randomNumber = Math.floor(Math.random() * 11);
@@ -20,7 +20,7 @@ function guessingGame() {
   alert("you won");
 }
 
-//Country facts with switch statements
+//Country facts with switch statement
 
 function countryFacts() {
   let greeting = "Hi! Enter a country and you'll get some facts in return.";
