@@ -71,19 +71,20 @@ function countryFacts() {
   }
 }
 
-// CELCIUS TO FARENHEIT CONVERTER
+// Celcius to Farenheit converter
 
 function celciusToFarenheit() {
+  let userInput;
+
   do {
-    let userInput = prompt("Convert Celcius to Farenheit");
-    if (userInput === "exit") {
-      alert("Thank you");
+    userInput = prompt(`Convert Celcius to Farenheit.`);
+    if (userInput === null) {
+      alert("Goodbye!");
     } else if (userInput <= 0 || isNaN(userInput)) {
-      alert("Please only enter a number that is > 0");
+      alert("Please only enter a NUMBER, that is bigger than 0");
     } else {
-      userInputConverterd = userInput * 1.8 + 32; //Formula
-      console.log(userInputConverterd);
+      userInputConverterd = userInput * 1.8 + 32;
       alert(userInput + " Celcius is " + userInputConverterd + " Farenheit");
     }
-  } while (userInput != "exit");
+  } while (userInput != null);
 }
