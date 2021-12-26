@@ -90,3 +90,44 @@ function celciusToFarenheit() {
 }
 
 // Calculate different shapes
+
+const calcFunctions = {
+  circleCalc: function (radius) {
+    return Math.PI * radius ** 2;
+  },
+  rectCalc: function (height, width) {
+    return height * width;
+  },
+  triangleCalc: function (height, width) {
+    return (height * width) / 2;
+  },
+};
+
+function calculateShape() {
+  let userChoice = 0;
+
+  do {
+    userChoice = parseInt(
+      prompt(
+        "Choose what to calculate the area of: \n 1) Circle \n 2) Rectangle \n 3) Triangle \n 4) Exit"
+      )
+    );
+
+    if (userChoice === 1) {
+      let radiusCircle = prompt("Enter radius");
+      alert(calcFunctions.circleCalc(radiusCircle));
+    } else if (userChoice === 2) {
+      let heightRect = prompt("Enter a height");
+      let widthRect = prompt("Enter a width");
+      alert(calcFunctions.rectCalc(heightRect, widthRect));
+    } else if (userChoice === 3) {
+      let heightTriangle = prompt("Enter a height");
+      let widthTriangle = prompt("Enter a width");
+      alert(calcFunctions.triangleCalc(heightTriangle, widthTriangle));
+    } else if (userChoice === 4) {
+      alert("Goodbye!");
+    } else {
+      alert("Not a valid action");
+    }
+  } while (userChoice != 4);
+}
