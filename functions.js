@@ -22,8 +22,7 @@ function guessingGame() {
 //Country facts with switch statement
 
 function countryFacts() {
-  let greeting = "Hi! Enter a country and you'll get some facts in return.";
-  alert(greeting);
+  alert("Hi! Enter a country and you'll get some facts in return.");
 
   while (window.prompt != null) {
     let countryInput = prompt("Please enter a country").toLowerCase();
@@ -65,7 +64,7 @@ function countryFacts() {
         );
         break;
       default:
-        alert("Unkown country for me, try again!");
+        alert("Unkown country, try again!");
     }
   }
 }
@@ -89,7 +88,7 @@ function celciusToFarenheit() {
   } while (userInput != null);
 }
 
-// Calculate different shapes
+//Calculate different shapes
 
 const calcFunctions = {
   circleCalc: function (radius) {
