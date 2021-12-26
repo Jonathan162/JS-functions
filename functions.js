@@ -88,3 +88,5 @@ function celciusToFarenheit() {
     }
   } while (userInput != null);
 }
+
+// Calculate different shapes
