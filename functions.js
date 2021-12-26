@@ -70,3 +70,17 @@ function countryFacts() {
     }
   }
 }
+
+// CELCIUS TO FARENHEIT CONVERTER
+
+function celciusToFarenheit() {
+  let userInput = prompt("Convert Celcius to Farenheit");
+
+  if (userInput <= 0 || isNaN(userInput)) {
+    alert("Please only enter a number that is > 0");
+  } else {
+    userInputConverterd = userInput * 1.8 + 32; //Formula
+    console.log(userInputConverterd);
+    alert(userInput + " Celcius is " + userInputConverterd + " Farenheit");
+  }
+}
