@@ -16,7 +16,6 @@ function guessingGame() {
       alert("Too high");
     }
   } while (guess != randomNumber);
-  // add a way to exit on window.prompt.
   alert("You won!");
 }
 
@@ -71,20 +70,21 @@ function countryFacts() {
   }
 }
 
-// Celcius to Farenheit converter
+//Celcius to Farenheit converter
 
 function celciusToFarenheit() {
   let userInput;
+  let userInputToFarenheit;
 
   do {
-    userInput = prompt(`Convert Celcius to Farenheit.`);
+    userInput = prompt("Convert Celcius to Farenheit.");
     if (userInput === null) {
       alert("Goodbye!");
     } else if (userInput <= 0 || isNaN(userInput)) {
       alert("Please only enter a NUMBER, that is bigger than 0");
     } else {
-      userInputConverterd = userInput * 1.8 + 32;
-      alert(userInput + " Celcius is " + userInputConverterd + " Farenheit");
+      userInputToFarenheit = userInput * 1.8 + 32;
+      alert(userInput + " Celcius is " + userInputToFarenheit + " Farenheit");
     }
   } while (userInput != null);
 }
