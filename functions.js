@@ -83,7 +83,9 @@ function celciusToFarenheit() {
       alert("Please only enter a NUMBER, that is bigger than 0");
     } else {
       userInputToFarenheit = userInput * 1.8 + 32;
-      alert(userInput + " Celcius is " + userInputToFarenheit + " Farenheit");
+      alert(
+        `${userInput} degrees in Celsius is ${userInputToFarenheit} Farenheit`
+      );
     }
   } while (userInput != null);
 }
