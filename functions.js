@@ -69,22 +69,22 @@ function countryFacts() {
   }
 }
 
-//Celcius to Farenheit converter
+//Celcius to Fahrenheit converter
 
-function celciusToFarenheit() {
+function celciusToFahrenheit() {
   let userInput;
-  let userInputToFarenheit;
+  let userInputToFahrenheit;
 
   do {
-    userInput = prompt("Convert Celcius to Farenheit.");
+    userInput = prompt("Convert Celcius to Fahrenheit.");
     if (userInput === null) {
       alert("Goodbye!");
     } else if (userInput <= 0 || isNaN(userInput)) {
       alert("Please only enter a NUMBER, that is bigger than 0");
     } else {
-      userInputToFarenheit = userInput * 1.8 + 32;
+      userInputToFahrenheit = userInput * 1.8 + 32;
       alert(
-        `${userInput} degrees in Celsius is ${userInputToFarenheit} Farenheit`
+        `${userInput} degrees in Celsius is ${userInputToFahrenheit} degrees in Fahrenheit.`
       );
     }
   } while (userInput != null);
