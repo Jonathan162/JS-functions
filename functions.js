@@ -148,4 +148,38 @@ function rockPaperScissors() {
   } else {
     computer = "paper";
   }
+
+  //Starting
+
+  let player = prompt(`Pick rock, paper, or scissors!`).toLowerCase();
+
+  console.log(`Computer choice: ${computer}`);
+  console.log(`Players choice: ${player}`);
+
+  const computerWinnerMessage = `The computer won! Picked: ${computer}`;
+  const playerWinnerMessage = `You won! Computer picked: ${computer}`;
+
+  if (player === computer) {
+    alert(`Draw`);
+  } else if (player === "scissors") {
+    if (computer === "rock") {
+      alert(`${computerWinnerMessage}`);
+    } else {
+      alert(`${playerWinnerMessage}`);
+    }
+  } else if (player === "paper") {
+    if (computer === "scissors") {
+      alert(`${computerWinnerMessage}`);
+    } else {
+      alert(`${playerWinnerMessage}`);
+    }
+  } else if (player === "rock") {
+    if (computer === "paper") {
+      alert(`${computerWinnerMessage}`);
+    } else {
+      alert(`${playerWinnerMessage}`);
+    }
+  } else {
+    alert(`Not a valid action, try again!`);
+  }
 }
