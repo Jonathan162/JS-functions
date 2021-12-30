@@ -132,3 +132,5 @@ function calculateShape() {
     }
   } while (userChoice != 4);
 }
+
+// Rock paper scissors
