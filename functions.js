@@ -133,4 +133,19 @@ function calculateShape() {
   } while (userChoice != 4);
 }
 
-// Rock paper scissors
+//Rock paper scissors
+
+function rockPaperScissors() {
+  let computer = Math.floor(Math.random() * 2);
+  console.log(`Computer random nr: ${computer}`);
+
+  //Generating a computer pick from the random number
+
+  if (computer === 0) {
+    computer = "rock";
+  } else if (computer === 1) {
+    computer = "scissors";
+  } else {
+    computer = "paper";
+  }
+}
